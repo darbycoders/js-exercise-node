@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Board Update</title>
+</head>
+<body>
+  <form method="POST" action="/board/update">
+    <input type="hidden" name="bo_no" value=<%= result.bo_no %> />
+    <p>
+      <input type="text" name="bo_subject" value="<%= result.bo_subject %>" />
+    </p>
+    <p>
+      <textarea name="bo_insert_content"><%= result.bo_insert_content %></textarea>
+    </p>
+    <p>
+      <button type="submit">전송</button>
+    </p>
+  </form>
+</body>
+</html>

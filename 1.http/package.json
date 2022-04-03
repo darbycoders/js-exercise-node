@@ -1,0 +1,17 @@
+{
+  "name": "node-http",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon app"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "ejs": "2.6.1",
+    "mysql": "^2.18.1",
+    "query-string": "^7.1.1"
+  }
+}
