@@ -1,0 +1,20 @@
+extends ../layout.pug 
+
+block styles
+
+block header
+  include ../include/header.pug
+block content 
+  h1='Login'
+  
+  form(method='POST', action='/member/login')
+    p
+      label='아이디'
+      input(type='text', name='mb_id')
+    p
+      label='비밀번호'
+      input(type='password', name='mb_password')
+    p
+      button(type='submit')='전송'
+block footer
+  include ../include/footer.pug

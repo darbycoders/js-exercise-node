@@ -1,0 +1,18 @@
+extends ../layout.pug 
+
+block styles
+
+block header
+  include ../include/header.pug
+block content 
+  h1='Board Write'
+  
+  form(method='POST', action='/board/write')
+    p
+      input(type='text', name='bo_subject')
+    p
+      textarea(name='bo_insert_content')
+    p
+      button(type='submit')='전송'
+block footer
+  include ../include/footer.pug

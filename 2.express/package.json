@@ -1,0 +1,22 @@
+{
+  "name": "js-exercise-node",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon app",
+    "schema": "node db/schema"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-mysql-session": "^2.1.7",
+    "express-session": "^1.17.2",
+    "mysql": "^2.18.1",
+    "pug": "^3.0.2"
+  }
+}

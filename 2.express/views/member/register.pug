@@ -1,0 +1,32 @@
+extends ../layout.pug 
+
+block styles
+
+block header
+  include ../include/header.pug
+block content 
+  h1='Register'
+  
+  form(method='POST', action='/member/register')
+    p
+      label='아이디'
+      input(type='text', name='mb_id')
+    p
+      label='비밀번호'
+      input(type='password', name='mb_password')
+    p
+      label='이름'
+      input(type='text', name='mb_name')
+    p
+      label='닉네임'
+      input(type='text', name='mb_nick')
+    p
+      label='이메일'
+      input(type='email', name='mb_email')
+    p
+      label='연라처'
+      input(type='text', name='mb_hp')
+    p
+      button(type='submit')='전송'
+block footer
+  include ../include/footer.pug

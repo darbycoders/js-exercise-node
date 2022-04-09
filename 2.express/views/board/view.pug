@@ -1,0 +1,18 @@
+extends ../layout.pug 
+
+block styles
+
+block header
+  include ../include/header.pug
+block content 
+  h1='Board View'
+  
+  h3=data.bo_subject
+  p=data.bo_insert_content
+  div
+    a(href='/board')='목록으로'
+    a(href=`/board/delete/${data.bo_no}`)='삭제하기'
+    a(href=`/board/update/${data.bo_no}`)='수정하기'
+    a(href='/board/write')='작성하기'
+block footer
+  include ../include/footer.pug

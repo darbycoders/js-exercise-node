@@ -1,0 +1,17 @@
+extends ../layout.pug 
+
+block styles
+
+block header
+  include ../include/header.pug
+block content 
+  h1='Board List'
+  ul
+    each val, key in posts
+      li
+        a(href=`/board/detail/${val.bo_no}`)
+          span(class='bo-no')=`${val.bo_no}.`
+          | 
+          span(class='bo-subject')=val.bo_subject
+block footer
+  include ../include/footer.pug
